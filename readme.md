@@ -25,19 +25,23 @@ The project mainly consists of the following components:
 
 Person Following
 
-
 https://github.com/Pana1v/ictc/assets/63401208/06f4ab7f-1f70-42eb-adc3-db73597a3067
-
 
 Line Following
 
-
-
 https://github.com/Pana1v/ictc/assets/63401208/e3c35637-c9e8-484b-8647-13adae28dffa
-
+IP Feed from Android -> PC Over WiFi -> Microcontroller for generating transmitted analog signals
+![WhatsApp Image 2024-03-01 at 14 17 49_1c7e3cf5](https://github.com/Pana1v/ictc/assets/63401208/cf725798-0a5f-4a4f-ae2e-bd12c38871b8)
 
 Traffic Sign Detection
-Customised App
+
+Object Detection 
+IP Feed from Android -> PC Over WiFi -> Microcontroller for generating transmitted analog signals
+
+[WhatsApp Image 2024-03-01 at 12 40 58_5377dfaa](https://github.com/Pana1v/ictc/assets/63401208/65a9f68b-1472-4193-a1f6-f22ac8050d16)
+
+Customised App!
+
 
 ## Test![WhatsApp Image 2024-03-02 at 12 14 48_86a6848a](https://github.com/Pana1v/ictc/assets/63401208/b17356ed-fb88-4738-8a00-439f6b86f8b1)
 ing Android App
