@@ -1,0 +1,17 @@
+# requirements.txt
+
+# Computer Vision
+opencv-python==4.5.3
+imutils==0.5.4
+
+# NumPy for numerical operations
+numpy==1.21.2
+
+# HTTP requests
+requests==2.26.0
+
+# Deep Learning Framework
+torch==1.10.0
+
+# YOLO framework
+ultralytics==0.10.0
