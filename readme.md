@@ -23,7 +23,24 @@ The project mainly consists of the following components:
 
 # Usage Instructions
 
-## Testing Android App
+Person Following
+
+
+https://github.com/Pana1v/ictc/assets/63401208/06f4ab7f-1f70-42eb-adc3-db73597a3067
+
+
+Line Following
+
+
+
+https://github.com/Pana1v/ictc/assets/63401208/e3c35637-c9e8-484b-8647-13adae28dffa
+
+
+Traffic Sign Detection
+Customised App
+
+## Test![WhatsApp Image 2024-03-02 at 12 14 48_86a6848a](https://github.com/Pana1v/ictc/assets/63401208/b17356ed-fb88-4738-8a00-439f6b86f8b1)
+ing Android App
 1. Install the compiled APK on your Android device for testing.
 
 ## Hive Computing Server Setup
