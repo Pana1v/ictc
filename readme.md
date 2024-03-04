@@ -30,6 +30,7 @@ https://github.com/Pana1v/ictc/assets/63401208/06f4ab7f-1f70-42eb-adc3-db73597a3
 Line Following
 
 https://github.com/Pana1v/ictc/assets/63401208/e3c35637-c9e8-484b-8647-13adae28dffa
+
 IP Feed from Android -> PC Over WiFi -> Microcontroller for generating transmitted analog signals
 ![WhatsApp Image 2024-03-01 at 14 17 49_1c7e3cf5](https://github.com/Pana1v/ictc/assets/63401208/cf725798-0a5f-4a4f-ae2e-bd12c38871b8)
 
