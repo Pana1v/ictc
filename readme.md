@@ -21,7 +21,6 @@ The project mainly consists of the following components:
   - **2.c. Traffic Sign Detection:**
     - Components responsible for detecting and interpreting traffic signs.
 
-![WhatsApp Image 2024-03-02 at 08 33 26_69bd4b5f](https://github.com/Pana1v/ictc/assets/63401208/e6d5784e-2a55-499c-ae5e-89976c08ba00)
 
 # Usage Instructions
 
