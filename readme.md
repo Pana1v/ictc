@@ -21,6 +21,8 @@ The project mainly consists of the following components:
   - **2.c. Traffic Sign Detection:**
     - Components responsible for detecting and interpreting traffic signs.
 
+![WhatsApp Image 2024-03-02 at 08 33 26_69bd4b5f](https://github.com/Pana1v/ictc/assets/63401208/e6d5784e-2a55-499c-ae5e-89976c08ba00)
+
 # Usage Instructions
 
 Person Following
@@ -37,11 +39,16 @@ IP Feed from Android -> PC Over WiFi -> Microcontroller for generating transmitt
 Traffic Sign Detection
 
 Object Detection 
+
+![WhatsApp Image 2024-03-01 at 07 11 43_a9450384](https://github.com/Pana1v/ictc/assets/63401208/d2166b8a-04e5-49f0-b7de-a0d10abf122e)
+
 IP Feed from Android -> PC Over WiFi -> Microcontroller for generating transmitted analog signals
 
 [WhatsApp Image 2024-03-01 at 12 40 58_5377dfaa](https://github.com/Pana1v/ictc/assets/63401208/65a9f68b-1472-4193-a1f6-f22ac8050d16)
 
 Customised App!
+
+![WhatsApp Image 2024-03-01 at 07 04 59_f48552ad](https://github.com/Pana1v/ictc/assets/63401208/00f813e2-d4c3-480e-b479-9fd1bd4ef31b)
 
 
 ## Test![WhatsApp Image 2024-03-02 at 12 14 48_86a6848a](https://github.com/Pana1v/ictc/assets/63401208/b17356ed-fb88-4738-8a00-439f6b86f8b1)
