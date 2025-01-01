@@ -14,6 +14,7 @@ model = YOLO('./Models/yolov8n.pt')
 # Move the model to GPU if CUDA is available
 if cuda_available:
     model = model.cuda()
+
 # Differential drive parameters
 max_speed = 255
 mid_point = 416  # Adjust based on your image size
@@ -28,6 +29,23 @@ def calculate_speeds(center_x):
     # Print the left and right speeds
     print(f"Left Speed: {left_speed}, Right Speed: {right_speed}")
 
+# Function to enhance the image
+def enhance_image(img):
+    # Convert to grayscale for histogram equalization
+    gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+    equalized = cv2.equalizeHist(gray)
+
+    # Convert back to BGR for consistency
+    enhanced = cv2.cvtColor(equalized, cv2.COLOR_GRAY2BGR)
+
+    # Apply a sharpening kernel
+    kernel = np.array([[0, -1, 0],
+                       [-1, 5, -1],
+                       [0, -1, 0]])
+    enhanced = cv2.filter2D(enhanced, -1, kernel)
+
+    return enhanced
+
 # Replace the below URL with your own IP provided by the IP WEBCAM APP.
 # Make sure to add "/shot.jpg" at last.
 url = "http://100.93.76.64:8080/shot.jpg"
@@ -38,6 +56,9 @@ while True:
         img_arr = np.array(bytearray(img_resp.content), dtype=np.uint8)
         img = cv2.imdecode(img_arr, -1)
         img = imutils.resize(img, width=800, height=600)
+
+        # Enhance the image
+        img = enhance_image(img)
 
         # Move the image to GPU if CUDA is available
         if cuda_available:
@@ -57,8 +78,6 @@ while True:
             x1, y1, x2, y2 = int(tensor[0].item()), int(tensor[1].item()), int(tensor[2].item()), int(tensor[3].item())
 
             # Draw bounding box rectangle on the frame
-            # use orange for rectangle
-
             cv2.rectangle(img, (x1, y1), (x2, y2), (255, 0, 255), 1)
 
             # Calculate center coordinates
@@ -71,11 +90,9 @@ while True:
 
             # Display info in the frame
             info_text = f"Object {i + 1}: {class_label} - Confidence: {confidence}\n Center: ({center_x}, {center_y})"
-            # use green for text
             if class_label == 'person':
                 cv2.putText(img, info_text, (x1, y1 - 20), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 255, 0), 1)
                 calculate_speeds(center_x)
-            # cv2.putText(img, info_text, (x1, y1 - 20), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255, 255, 255), 1)
 
         # Display the frame
         cv2.imshow('YOLOv8 IP Camera Inference', img)
